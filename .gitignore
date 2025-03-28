@@ -1,0 +1,42 @@
+# Node.js dependencies
+node_modules/
+dist/
+.vite/
+
+# Build output
+*.log
+*.cache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor settings
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# GitHub Pages deployment folder
+gh-pages/
+
+# TypeScript
+*.tsbuildinfo
+
+# Mac/Linux/Windows cache
+*.swp
