@@ -14,8 +14,9 @@ const GlobalStyles = createGlobalStyle`
     font-weight: 400;
 
     color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
+
+    background-color: ${(props) => props.theme.backgroundColor};
+    color: ${(props) => props.theme.textColor};
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -109,8 +110,8 @@ const GlobalStyles = createGlobalStyle`
 
   @media (prefers-color-scheme: light) {
     :root {
-      color: #213547;
-      background-color: teal;
+      background-color: ${(props) => props.theme.backgroundColor};
+      color: ${(props) => props.theme.textColor};
     }
     a:hover {
       color: #747bff;
