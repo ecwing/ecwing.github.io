@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "format": "prettier --write .",
-    "deploy": "gh-pages -d dist"
+    "deploy": "vite build && gh-pages -d dist --add"
   },
   "dependencies": {
     "react": "^19.0.0",
