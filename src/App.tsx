@@ -1,17 +1,24 @@
-import portfolio from "/portfolio.svg";
+import { useRef } from "react";
 import SkillGrid from "./components/SkillGrid";
 import ThemeToggle from "./components/ThemeToggle";
+import LandingPage from "./pages/LandingPage";
 
 function App() {
+  const skillsRef = useRef<HTMLDivElement>(null);
+
+  const handleScroll = () => {
+
+    skillsRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
-      <div>
-        <img src={portfolio} className="logo" alt="Portfolio logo" />
+      <LandingPage handleScroll={handleScroll}/>
+
+      <div ref={skillsRef}>
+        <h2 style={{marginTop: '300px'}}>Skills</h2>
+        <SkillGrid />
       </div>
-      <h1>Eric Wing's Portfolio Website!</h1>
-      <h2>🚧 under construction 🚧</h2>
-      <h2>Skills</h2>
-      <SkillGrid />
       <ThemeToggle />
     </>
   );
