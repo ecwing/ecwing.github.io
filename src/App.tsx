@@ -7,16 +7,15 @@ function App() {
   const skillsRef = useRef<HTMLDivElement>(null);
 
   const handleScroll = () => {
-
     skillsRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <>
-      <LandingPage handleScroll={handleScroll}/>
+      <LandingPage handleScroll={handleScroll} />
 
       <div ref={skillsRef}>
-        <h2 style={{marginTop: '300px'}}>Skills</h2>
+        <h2 style={{ marginTop: "300px" }}>Skills</h2>
         <SkillGrid />
       </div>
       <ThemeToggle />

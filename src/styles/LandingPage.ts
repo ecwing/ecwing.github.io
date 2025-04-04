@@ -6,7 +6,6 @@ export const Wrapper = styled.button`
   align-items: center;
   background-color: ${(props) => props.theme.backgroundColor};
   color: ${(props) => props.theme.textColor};
-
 `;
 
 export const ScrollButton = styled.button`
@@ -23,4 +22,3 @@ export const ScrollButton = styled.button`
     background: #cc6300;
   }
 `;
-
